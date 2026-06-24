@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS CloudFormation template and extract all resource logical IDs that are of type 'AWS::Lambda::Function'",
+    "format": "python",
+    "solution_criteria": "Function should return a list of logical IDs for Lambda functions. Should handle both JSON and YAML CloudFormation templates. Must correctly identify only Lambda function resources."
+  },
+  {
+    "task": "Create a JSON policy document that allows an IAM role to read and list objects from a specific S3 bucket named 'my-data-bucket'",
+    "format": "json",
+    "solution_criteria": "Must be valid JSON with proper IAM policy structure. Should include s3:GetObject and s3:ListBucket actions. Must specify the correct ARNs for the bucket and objects. Should follow AWS IAM best practices."
+  },
+  {
+    "task": "Write a regex pattern to validate AWS S3 bucket names according to AWS naming rules (lowercase letters, numbers, hyphens, 3-63 characters, cannot start/end with hyphen)",
+    "format": "regex",
+    "solution_criteria": "Regex should reject bucket names shorter than 3 or longer than 63 characters. Should only allow lowercase letters, numbers, and hyphens. Should reject names starting or ending with hyphens. Should accept valid bucket names like 'my-bucket-123'."
+  }
+]
